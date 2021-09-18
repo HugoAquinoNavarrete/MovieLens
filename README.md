@@ -18,7 +18,7 @@ Contains the report on `PDF` format.
 
 -----
 
-## 3. File `MovieLens.r`
+## 3. File `MovieLens.R`
 
 Contains a `R` format of the algorithms used to predict the movie ratings and RMSE.
 
