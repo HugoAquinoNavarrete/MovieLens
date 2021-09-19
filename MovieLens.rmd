@@ -44,7 +44,7 @@ Therefore and as a way to continue acquiring the skills needed to become a data 
 
 In order to compare the different algorithms, the **root mean squared error (RMSE)** will be used as the loss function, so the target is to obtain a RMSE lower than **0.86490**.
 
-The files required for this project ([pdf][pdf_file], [rmd][rmd_file], [r][r_file]) are hosted on [github][github].
+The files required for this project ([pdf][pdf_file], [rmd][rmd_file], [R][r_file]) are hosted on [github][github].
 
 `\newpage{}`{=latex}'
 
@@ -1679,7 +1679,7 @@ The RMSE obtained is: **`r thirteenth_model_matrix_factorization_validation_reco
 
 ### Resume
 
-In the next table are indicated the **RMSEs** obtained on every algorithm being **matrix factorization** __(best performance)__ the one that generated a **`r round(min(RMSE.results$RMSE),5)`** that is below the proposed target.
+In the next table are indicated the **RMSEs** obtained on every algorithm being **matrix factorization (best performance)** the one that generated a **`r round(min(RMSE.results$RMSE),5)`** that is below the proposed target.
 
 ```{r table-RMSEs, warning = FALSE, message = FALSE}
 
@@ -1698,7 +1698,7 @@ RMSE.results %>% kbl(.,
       end=0.80),
     popover = paste("RMSE:", RMSE.results$RMSE))
 ```
-The models **#11** and **#12** took **20** and **70 minutes** respectively to run being the ones that could obtain a RMSE below the target.
+The models **#11** and **#12** took **20** and **90 minutes** respectively to run being the ones that could obtain a RMSE below the target.
 
 `\newpage{}`{=latex}'
 
@@ -1706,7 +1706,7 @@ The models **#11** and **#12** took **20** and **70 minutes** respectively to ru
 
 The algorithms that took less time to be executed obtained a higher **RMSE** in some cases very similar to the standard deviation and the ones that took more time on being executed obtained a lower **RMSE**.
 
-The results obtained by **factorization model** (models #12 and #13) are **`r  round(100*abs(twelveth_model_matrix_factorization-0.86490)/((twelveth_model_matrix_factorization+0.86490)/2),2)`%** more efficient than the target proposed with the constraint about the computing resources needed to execute the algorithms (for this project a end-user device with **8 GiB RAM**, **2 virtual cores**, **2.90 GHz Intel** processor speed running **Windows 10**). In the other side models such as __user (#2)__, __date effect (#5)__ and __genres (#7)__ had a lower performance by **`r  round(100*abs(second_model_movie_effect-0.86490)/((second_model_movie_effect+0.86490)/2),2)`%**, **`r  round(100*abs(fifth_model_date_effect-0.86490)/((fifth_model_date_effect+0.86490)/2),2)`%**, and **`r  round(100*abs(septh_model_genres_effect-0.86490)/((septh_model_genres_effect+0.86490)/2),2)`%** respectively.
+The results obtained by **factorization model (models #12 and #13)** are **`r  round(100*abs(twelveth_model_matrix_factorization-0.86490)/((twelveth_model_matrix_factorization+0.86490)/2),2)`%** more efficient than the target proposed with the constraint about the computing resources needed to execute the algorithms (for this project a end-user device with **8 GiB RAM**, **2 virtual cores**, **2.90 GHz Intel** processor speed running **Windows 10**). In the other side models such as __user (#2)__, __date effect (#5)__ and __genres (#7)__ had a lower performance by **`r  round(100*abs(second_model_movie_effect-0.86490)/((second_model_movie_effect+0.86490)/2),2)`%**, **`r  round(100*abs(fifth_model_date_effect-0.86490)/((fifth_model_date_effect+0.86490)/2),2)`%**, and **`r  round(100*abs(septh_model_genres_effect-0.86490)/((septh_model_genres_effect+0.86490)/2),2)`%** respectively.
 
 Now based on this experience, the high computing capabilities are needed to generate value as soon as possible, because for the case of a **recommendation system** a strategic decision can be supported based on the results obtained and **cloud computing** can be used with the consideration of the costs involved.
 
@@ -1724,8 +1724,8 @@ As a future work techniques more advanced such as **neural networks** and **deep
 [spotify]: https://www.forbes.com/sites/bernardmarr/2017/10/30/the-amazing-ways-spotify-uses-big-data-ai-and-machine-learning-to-drive-business-success/?sh=282254a34bd2
 [recommendation_system]: https://en.wikipedia.org/wiki/Recommender_system
 [movielens]: https://grouplens.org/datasets/movielens/10m/
-[pdf_file]: https://github.com/HugoAquinoNavarrete/MovieLens/MovieLens.pdf
-[rmd_file]: https://github.com/HugoAquinoNavarrete/MovieLens/MovieLens.rmd
-[r_file]: https://github.com/HugoAquinoNavarrete/MovieLens/MovieLens.r
+[pdf_file]: https://github.com/HugoAquinoNavarrete/MovieLens/blob/main/MovieLens.pdf
+[rmd_file]: https://github.com/HugoAquinoNavarrete/MovieLens/blob/main/MovieLens.rmd
+[r_file]: https://github.com/HugoAquinoNavarrete/MovieLens/blob/main/MovieLens.R
 [github]: https://github.com/HugoAquinoNavarrete/MovieLens
 [epoch_format]: https://en.wikipedia.org/wiki/Unix_time
