@@ -1,7 +1,7 @@
 ####################################################################
 # HarvardX: PH125.9x - Capstone Project                            #
 # MovieLens Project                                                #
-# https://github.com/HugoAquinoNavarrete/                          #
+# https://github.com/HugoAquinoNavarrete/MovieLens                 #
 # R code that generates predicted movie ratings and RMSE score     #
 # Hugo Aquino                                                      #
 # Panama City                                                      #
